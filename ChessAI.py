@@ -55,8 +55,8 @@ piecePositionScores = {"wN": knightScores,
                          "bQ": queenScores[::-1],
                          "wR": rookScores,
                          "bR": rookScores[::-1],
-                         "wp": pawnScores,
-                         "bp": pawnScores[::-1]}
+                         "wP": pawnScores,
+                         "bP": pawnScores[::-1]}
 
 CHECKMATE = 1000
 STALEMATE = 0
