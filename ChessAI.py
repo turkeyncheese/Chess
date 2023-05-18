@@ -118,7 +118,7 @@ def scoreBoard(gs):
                 piecePositionScore = 0
 
                 if piece[1] != "K":
-                    piecePositionScore = piecePositionScores[piece[1]][row][col]
+                    piecePositionScore = piecePositionScores[piece][row][col]
                 if piece[0] == "w":
                     score += pieceScore[piece[1]] + piecePositionScore
                 if piece[0] == "b":
