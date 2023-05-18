@@ -1,6 +1,6 @@
 import random
 
-pieceScore = {"K": 0, "Q": 9, "R": 5, "B": 3, "N": 3, "p": 1}
+pieceScore = {"K": 0, "Q": 9, "R": 5, "B": 3, "N": 3, "P": 1}
 
 pawnScores = [[0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
                [0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7],
@@ -118,7 +118,7 @@ def scoreBoard(gs):
                 piecePositionScore = 0
 
                 if piece[1] != "K":
-                    piecePositionScore = piecePositionScores[piece][row][col]
+                    piecePositionScore = piecePositionScores[piece[1]][row][col]
                 if piece[0] == "w":
                     score += pieceScore[piece[1]] + piecePositionScore
                 if piece[0] == "b":
